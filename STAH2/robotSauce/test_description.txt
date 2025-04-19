@@ -1,0 +1,20 @@
+Test Cases Description:
+
+1. Test 1 - Verify Home Page Sections:
+   - Steps:
+     1. Open demoqa.com homepage.
+     2. Verify that the page contains sections "Elements" and "Forms".
+     3. Take a screenshot.
+   - Expected: Page must display "Elements" and "Forms" sections.
+
+2. Test 2 - Check Interactive Elements:
+   - Steps:
+     1. Open demoqa.com homepage.
+     2. Verify that the cards for "Elements" and "Forms" are visible.
+     3. Take a screenshot.
+   - Expected: Cards must be visible and clickable.
+
+Execution Results in BrowserStack:
+- Tests run on Chrome, Firefox, and Safari.
+- Each test has a clear session name (e.g., "Test 1 - Verify Home Page Sections").
+- Screenshots are attached for verification.

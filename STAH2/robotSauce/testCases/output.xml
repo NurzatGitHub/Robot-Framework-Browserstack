@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.3 on win32)" generated="2025-04-19T11:25:26.848660" rpa="false" schemaversion="5">
+<suite id="s1" name="newSiteTests" source="C:\Users\Nurza\Documents\MTSD2\STAH2\robotSauce\testCases\newSiteTests.robot">
+<test id="s1-t1" name="Test 1 - Verify Home Page Sections" line="34">
+<kw name="Open Browser Stack Session" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-19T11:25:27.205168" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001ADDBCC2150&gt;</msg>
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<arg>modules=selenium</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-19T11:25:27.205168" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-19T11:25:27.205168" level="INFO">${caps} = {'browserName': 'Edge', 'os': 'Windows', 'osVersion': '10', 'browserstack.user': 'bsuser_iaqQYs', 'browserstack.key': 'XsSnxjz2CLL5QxmAMtUj', 'browserstack.sessionName': 'newSiteTests - Test 1 - Verif...</msg>
+<var>${caps}</var>
+<arg>browserName=${BROWSER}</arg>
+<arg>os=Windows</arg>
+<arg>osVersion=10</arg>
+<arg>browserstack.user=${BROWSERSTACK_USER}</arg>
+<arg>browserstack.key=${BROWSERSTACK_KEY}</arg>
+<arg>browserstack.sessionName=${SUITE NAME} - ${TEST NAME}</arg>
+<arg>browserstack.buildName=STAH2_Homework</arg>
+<arg>browserstack.projectName=MTSD_Automation</arg>
+<arg>browserstack.local=false</arg>
+<arg>browserstack.selenium_version=4.1.0</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-19T11:25:27.205168" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:25:27.205168" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+<msg time="2025-04-19T11:25:27.207401" level="INFO">Opening browser 'Edge' to base url 'https://demoqa.com' through remote server at 'https://bsuser_iaqQYs:XsSnxjz2CLL5QxmAMtUj@hub-cloud.browserstack.com/wd/hub'.</msg>
+<msg time="2025-04-19T11:26:05.950888" level="INFO">C:\Python312\Lib\site-packages\selenium\webdriver\remote\remote_connection.py:418: UserWarning: Embedding username and password in URL could be insecure, use ClientConfig instead
+  headers = self.get_remote_connection_headers(parsed_url, self._client_config.keep_alive)</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>desired_capabilities=${caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-19T11:25:27.205168" elapsed="38.747723"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-19T11:26:05.954206" elapsed="2.461815"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-19T11:26:08.417506" elapsed="6.346381"/>
+</kw>
+<status status="PASS" start="2025-04-19T11:25:27.204166" elapsed="47.560724"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:17.109925" level="INFO">Current page contains text 'Elements'.</msg>
+<arg>Elements</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-19T11:26:14.765718" elapsed="2.344791"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:17.888943" level="INFO">Current page contains text 'Forms'.</msg>
+<arg>Forms</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-04-19T11:26:17.111645" elapsed="0.777298"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:24.702010" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-04-19T11:26:17.892535" elapsed="6.810470"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-19T11:26:24.704328" elapsed="2.209046"/>
+</kw>
+<status status="PASS" start="2025-04-19T11:25:27.203132" elapsed="59.710654"/>
+</test>
+<test id="s1-t2" name="Test 2 - Check Interactive Elements" line="41">
+<kw name="Open Browser Stack Session" type="SETUP">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-04-19T11:26:26.917533" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001ADDBCFAA20&gt;</msg>
+<var>${options}</var>
+<arg>selenium.webdriver.ChromeOptions()</arg>
+<arg>modules=selenium</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-04-19T11:26:26.917533" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-04-19T11:26:26.920288" level="INFO">${caps} = {'browserName': 'Edge', 'os': 'Windows', 'osVersion': '10', 'browserstack.user': 'bsuser_iaqQYs', 'browserstack.key': 'XsSnxjz2CLL5QxmAMtUj', 'browserstack.sessionName': 'newSiteTests - Test 2 - Check...</msg>
+<var>${caps}</var>
+<arg>browserName=${BROWSER}</arg>
+<arg>os=Windows</arg>
+<arg>osVersion=10</arg>
+<arg>browserstack.user=${BROWSERSTACK_USER}</arg>
+<arg>browserstack.key=${BROWSERSTACK_KEY}</arg>
+<arg>browserstack.sessionName=${SUITE NAME} - ${TEST NAME}</arg>
+<arg>browserstack.buildName=STAH2_Homework</arg>
+<arg>browserstack.projectName=MTSD_Automation</arg>
+<arg>browserstack.local=false</arg>
+<arg>browserstack.selenium_version=4.1.0</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-04-19T11:26:26.917533" elapsed="0.002755"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:26.920288" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+<msg time="2025-04-19T11:26:26.923589" level="INFO">Opening browser 'Edge' to base url 'https://demoqa.com' through remote server at 'https://bsuser_iaqQYs:XsSnxjz2CLL5QxmAMtUj@hub-cloud.browserstack.com/wd/hub'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>desired_capabilities=${caps}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-19T11:26:26.920288" elapsed="13.019968"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-19T11:26:39.940256" elapsed="0.211391"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-19T11:26:40.151647" elapsed="0.401612"/>
+</kw>
+<status status="PASS" start="2025-04-19T11:26:26.917533" elapsed="13.635726"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:42.036187" level="INFO">Element 'xpath=//div[contains(@class,'card')][.//h5[contains(.,'Elements')]]' is displayed.</msg>
+<arg>xpath=//div[contains(@class,'card')][.//h5[contains(.,'Elements')]]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-19T11:26:40.554119" elapsed="1.482068"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:42.814583" level="INFO">Element 'xpath=//div[contains(@class,'card')][.//h5[contains(.,'Forms')]]' is displayed.</msg>
+<arg>xpath=//div[contains(@class,'card')][.//h5[contains(.,'Forms')]]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-19T11:26:42.039209" elapsed="0.775457"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-04-19T11:26:46.962436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-04-19T11:26:42.814883" elapsed="4.148216"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-19T11:26:46.964437" elapsed="1.278398"/>
+</kw>
+<status status="PASS" start="2025-04-19T11:26:26.915534" elapsed="21.328941"/>
+</test>
+<status status="PASS" start="2025-04-19T11:25:26.850091" elapsed="81.399074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="newSiteTests" id="s1" pass="2" fail="0" skip="0">newSiteTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-19T11:25:27.205168" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+<msg time="2025-04-19T11:26:26.920288" level="WARN">desired_capabilities has been deprecated and removed. Please use options to configure browsers as per documentation.</msg>
+</errors>
+</robot>
